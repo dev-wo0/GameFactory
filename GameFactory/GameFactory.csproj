@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{662CF776-7271-4581-9B25-BEB9311E797E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameFactory</RootNamespace>
+    <AssemblyName>GameFactory</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ad_Score.cs" />
+    <Compile Include="Array_list.cs" />
+    <Compile Include="ball1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ball1.designer.cs">
+      <DependentUpon>ball1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ball2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ball2.designer.cs">
+      <DependentUpon>ball2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ball3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ball3.designer.cs">
+      <DependentUpon>ball3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etc.cs" />
+    <Compile Include="mabel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mabel1.designer.cs">
+      <DependentUpon>mabel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mabel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mabel2.designer.cs">
+      <DependentUpon>mabel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maze1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maze1.designer.cs">
+      <DependentUpon>maze1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maze2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maze2.designer.cs">
+      <DependentUpon>maze2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maze3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maze3.designer.cs">
+      <DependentUpon>maze3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maze4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maze4.designer.cs">
+      <DependentUpon>maze4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maze5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maze5.designer.cs">
+      <DependentUpon>maze5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.designer.cs">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ball1.resx">
+      <DependentUpon>ball1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ball2.resx">
+      <DependentUpon>ball2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ball3.resx">
+      <DependentUpon>ball3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mabel1.resx">
+      <DependentUpon>mabel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mabel2.resx">
+      <DependentUpon>mabel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maze1.resx">
+      <DependentUpon>maze1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maze2.resx">
+      <DependentUpon>maze2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maze3.resx">
+      <DependentUpon>maze3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maze4.resx">
+      <DependentUpon>maze4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maze5.resx">
+      <DependentUpon>maze5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\가로 벽.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\곰캐릭터.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\공.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\레벨1에메랄드.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\레벨2루비.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\레벨3사파이어.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\레벨4다이아몬드.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\비행기1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\비행기2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\비행기3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\비행기4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\세로 벽.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\입구.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\종이비행기.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\쥐비행기.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\출구.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\캐릭터.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\캐릭터2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\폼1이미지.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\헬리콥터 비행기.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\황금비행기.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
